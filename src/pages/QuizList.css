@@ -1,0 +1,157 @@
+.quizlist-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.07);
+  padding: 2rem;
+  font-family: Inter, sans-serif;
+}
+
+.quizlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.quizlist-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.quizlist-btn {
+  background: #fff;
+  color: #222;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-right: 12px;
+}
+
+.quizlist-btn:hover {
+  background: #f3f4f6;
+}
+
+.logout-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: background 0.15s;
+}
+
+.logout-btn:hover {
+  background: #1d4ed8;
+}
+
+.no-quizzes {
+  background: #f9fafb;
+  padding: 1.25rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+.quiz-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 30px;
+}
+
+.quiz-table thead tr {
+  background: #f9fafb;
+}
+
+.quiz-table th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 8px;
+}
+
+.quiz-table td {
+  padding: 12px 8px;
+  font-size: 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.start-quiz-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 7px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.start-quiz-btn:hover {
+  background: #1e40af;
+}
+
+.attempted-title {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+}
+
+.no-attempted {
+  color: #777;
+  margin: 1rem 0 2rem;
+}
+
+.attempted-container {
+  border-radius: 13px;
+  border: 1px solid #f1f5f9;
+  background: #f9fafb;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.attempted-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.attempted-table td {
+  padding: 14px 8px;
+  border-bottom: 1px solid #f1f5f9;
+  background: #fff;
+}
+
+.view-details-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.view-details-btn:hover {
+  background: #1e40af;
+}
+
+.loading-text {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 18px;
+  color: #555;
+}
