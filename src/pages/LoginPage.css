@@ -79,3 +79,23 @@
   font-weight: bold;
   color: #888;
 }
+
+/* --- Add this media query for responsiveness --- */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-right {
+    display: none; /* Hide the image on small screens to save space */
+  }
+
+  .login-left {
+    justify-content: flex-start;
+    padding-top: 4rem;
+  }
+
+  .login-title {
+    font-size: 2.2rem; /* Slightly smaller title for mobile */
+  }
+}
