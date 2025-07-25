@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* Use min-height for better flexibility */
   background-color: #f9f9f9;
   padding: 20px;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 .onboarding-card {
@@ -20,6 +21,9 @@
 .onboarding-left {
   flex: 1;
   padding: 40px;
+  display: flex; /* Added for better centering of the form content */
+  flex-direction: column; /* Added for better centering of the form content */
+  justify-content: center; /* Added for better centering of the form content */
 }
 
 .onboarding-right {
@@ -35,12 +39,14 @@
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
+  text-align: center; /* Center heading for a balanced look */
 }
 
 .onboarding-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%; /* Ensure form takes full width of its container */
 }
 
 .onboarding-input {
@@ -49,6 +55,7 @@
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 14px;
+  box-sizing: border-box; /* Consistent box model */
 }
 
 .onboarding-button {
@@ -70,4 +77,27 @@
 .onboarding-image {
   max-width: 100%;
   height: auto;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+  .onboarding-card {
+    /* Stack the form and image vertically */
+    flex-direction: column;
+  }
+
+  .onboarding-right {
+    /* Hide the image on smaller screens to prioritize the form */
+    /* You can also choose to keep it by removing this display property */
+    display: none; 
+  }
+
+  .onboarding-left {
+    /* Adjust padding for smaller screens */
+    padding: 30px;
+  }
+
+  .onboarding-heading {
+    font-size: 20px; /* Slightly smaller heading */
+  }
 }
