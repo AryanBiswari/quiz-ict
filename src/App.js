@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useAuth } from "./contexts/AuthContext";
-import "./firebase.json";
+
 // Lazy load pages
 const OnboardingPage = lazy(() => import("./pages/OnboardingPage"));
 const QuizList = lazy(() => import("./pages/QuizList"));
