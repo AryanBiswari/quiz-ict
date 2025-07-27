@@ -1,83 +1,97 @@
 .review-loading {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 18px;
-  color: #555;
+ text-align: center;
+ margin-top: 40px;
+ font-size: 18px;
+ color: #555;
 }
 
 .review-container {
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 24px;
-  background: #fff;
-  border-radius: 10px;
-  font-family: Inter, sans-serif;
+ max-width: 600px;
+ margin: 2rem auto;
+ padding: 24px;
+ background: #fff;
+ border-radius: 10px;
+ font-family: Inter, sans-serif;
 }
 
 .review-title {
-  color: #2563eb;
-  margin-bottom: 10px;
+ color: #2563eb;
+ margin-bottom: 10px;
 }
 
 .score-high {
-  color: green;
+ color: green;
 }
 
 .score-normal {
-  color: black;
+ color: black;
 }
 
 .review-question {
-  margin-bottom: 16px;
-  padding: 14px;
-  border-radius: 8px;
+ margin-bottom: 16px;
+ padding: 14px;
+ border-radius: 8px;
 }
 
 .review-question.correct {
-  background: #e0ffe6;
+ background: #e0ffe6;
 }
 
 .review-question.incorrect {
-  background: #fff0f0;
+ background: #fff0f0;
 }
 
 .question-text {
-  font-weight: bold;
-  margin-bottom: 6px;
+ font-weight: bold;
+ margin-bottom: 6px;
 }
 
 .answer-correct {
-  color: green;
+ color: green;
 }
 
 .answer-incorrect {
-  color: red;
+ color: red;
 }
 
 .option {
-  margin-left: 10px;
-  padding: 2px 8px;
-  background: #f4f4f4;
-  border-radius: 5px;
-  display: inline-block;
+ margin-left: 10px;
+ padding: 2px 8px;
+ background: #f4f4f4;
+ border-radius: 5px;
+ display: inline-block;
 }
 
 .option.selected-option {
-  background: #dbeafe;
+ background: #dbeafe;
 }
 
 .back-btn {
-  background: #2563eb;
-  color: #fff;
-  border: none;
-  border-radius: 7px;
-  padding: 10px 24px;
-  font-weight: bold;
-  margin-top: 18px;
-  cursor: pointer;
-  transition: background 0.2s;
+ background: #2563eb;
+ color: #fff;
+ border: none;
+ border-radius: 7px;
+ padding: 10px 24px;
+ font-weight: bold;
+ margin-top: 18px;
+ cursor: pointer;
+ transition: background 0.2s;
 }
 
 .back-btn:hover {
-  background: #1e40af;
+ background: #1e40af;
+}
+
+/* --- RESPONSIVE STYLES --- */
+@media (max-width: 640px) {
+ .review-container {
+  /* Reduce margin and padding on smaller screens */
+  margin: 1rem;
+  padding: 1rem; /* 16px */
+ }
+
+ .back-btn {
+  /* Make button full-width for easier tapping on mobile */
+  width: 100%;
+ }
 }
